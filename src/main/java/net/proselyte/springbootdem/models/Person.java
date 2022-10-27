@@ -1,4 +1,4 @@
-package net.proselyte.springbootdem.model;
+package net.proselyte.springbootdem.models;
 
 import lombok.Data;
 
@@ -8,7 +8,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "person")
 public class Person {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,5 +23,4 @@ public class Person {
 
     @Column
     private String email;
-
 }

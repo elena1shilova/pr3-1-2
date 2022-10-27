@@ -1,17 +1,24 @@
 package net.proselyte.springbootdem.service;
-
-import net.proselyte.springbootdem.model.Person;
-import org.springframework.stereotype.Service;
-
+import net.proselyte.springbootdem.models.Person;
 import java.util.List;
 
-
 public interface PersonService {
-    public Person findById(Long id);
 
-    public List<Person> findAll();
+    public Person show(Long id);
 
-    public  Person savePerson(Person person);
+    public List<Person> index();
 
-    public void deleteById(Long id);
+    public  Person save(Person person);
+
+    public void delete(Long id);
+
+    /*public List<Person> index();
+
+    public Person show(Long id);
+
+    public void save(Person person);
+
+  // public void update(Long id, Person updatePerson);
+
+    public void delete(Long id);*/
 }
