@@ -12,13 +12,4 @@ public interface PersonService {
 
     public void delete(Long id);
 
-    /*public List<Person> index();
-
-    public Person show(Long id);
-
-    public void save(Person person);
-
-  // public void update(Long id, Person updatePerson);
-
-    public void delete(Long id);*/
 }

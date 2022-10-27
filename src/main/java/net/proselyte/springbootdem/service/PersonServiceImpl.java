@@ -30,28 +30,5 @@ public class PersonServiceImpl implements PersonService{
     public void delete(Long id) {
         personRepository.deleteById(id);
     }
-    /*@Override
-    public List<Person> index() {
-        return personRepository.findAll();
-    }
 
-    @Override
-    public Person show(Long id) {
-        return personRepository.findById(id).orElse(null);
-    }
-
-    @Override
-    public void save(Person person) {
-        personRepository.save(person);
-    }
-
-
-//    public void update(Long id, Person updatePerson) {
-//        personRepository.update(id, updatePerson);
-//    }
-    @Override
-    public void delete(Long id) {
-        personRepository.deleteById(id);
-    }*/
-   // spring.mvc.hiddenmethod.filter.enabled=true
 }
